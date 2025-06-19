@@ -13,8 +13,11 @@ const Hero = () => {
               Focus on your business, not paperwork
             </h1>
             <p className="text-lg md:text-xl text-gray-700 mb-8 md:mb-10">
-              growDhanda helps you eliminate repetitive tasks in accounting, HR, and payroll, 
-              enabling 24/7 control over your business operations—even when you're away.
+growDhanda aims to boost and simplify your expansion journey. As a business owner you
+spend most of your time in routine repetitive work which reduces your efficiency. We takeover your
+Finance and HR function to help you get rid of your routine work so that you can focus on your business
+growth. We also assist in accelerating your growth by helping you with Fund raising, Debt Syndication
+along with helping you to avail Government Schemes.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button className="gd-button-primary text-base">Get Started</Button>
