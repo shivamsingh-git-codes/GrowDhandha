@@ -44,14 +44,14 @@ const About = () => {
 
           <div className="flex-1 order-1 lg:order-2">
             <div className="max-w-lg">
-              <h2 className="gd-heading">About growDhanda</h2>
+              <h2 className="gd-heading">About grow Dhanda</h2>
               <p className="text-lg text-gray-700 mb-6">
-                At growDhanda, we believe that business owners should focus on growth and innovation, 
+                At grow Dhanda, we believe that business owners should focus on growth and innovation, 
                 not paperwork and administrative tasks. Our mission is to simplify business operations 
                 through technology and expertise.
               </p>
               <p className="text-lg text-gray-700 mb-6">
-                Founded by a team of business and technology experts, growDhanda provides comprehensive 
+                Founded by a team of business and technology experts, grow Dhanda provides comprehensive 
                 solutions for accounting, HR, payroll, and business management that help startups and 
                 traditional businesses alike to streamline operations and achieve their growth potential.
               </p>

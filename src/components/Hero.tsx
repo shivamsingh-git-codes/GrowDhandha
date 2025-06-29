@@ -32,7 +32,7 @@ const Hero = () => {
           <div className="flex-1 text-center lg:text-left max-w-2xl mx-auto lg:mx-0">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 md:mb-6">
               <span className="block text-growdhanda-gold mb-2">Growth Simplified</span>
-              Focus on your business, not paperwork
+              Focus on your business, not on paperwork
             </h1>
             <p className="text-lg md:text-xl text-gray-700 mb-8 md:mb-10">
               grow Dhanda aims to boost and simplify your expansion journey. As a business owner you
@@ -75,7 +75,7 @@ const Hero = () => {
         <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center">
           <div className="bg-white rounded-lg shadow-xl p-6 w-full max-w-lg relative">
             <button className="absolute top-2 right-4 text-gray-500" onClick={() => setShowForm(false)}>✕</button>
-            <h2 className="text-xl font-bold mb-4">Get Started with growDhanda</h2>
+            <h2 className="text-xl font-bold mb-4">Get Started with grow Dhanda</h2>
             <form onSubmit={handleSubmit} className="space-y-4">
               <input type="text" name="name" placeholder="Your Name" className="w-full border p-2 rounded" onChange={handleChange} required />
               <input type="text" name="businessName" placeholder="Business Name" className="w-full border p-2 rounded" onChange={handleChange} required />
