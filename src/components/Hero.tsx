@@ -18,12 +18,28 @@ const Hero = () => {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    // send to your backend or email service here
-    console.log('Form submitted:', formData);
-    alert("Thank you! We'll get in touch soon.");
-    setShowForm(false);
-  };
+  e.preventDefault();
+
+  const { name, businessName, industry, problems, contact, email } = formData;
+
+  // Validate email contains @
+  if (!email.includes('@')) {
+    alert('Please enter a valid email address including "@"');
+    return;
+  }
+
+  // Validate contact number is exactly 10 digits
+  if (!/^\d{10}$/.test(contact)) {
+    alert('Please enter a valid 10-digit contact number');
+    return;
+  }
+
+  // If validation passes, continue
+  console.log('Form submitted:', formData);
+  alert("Thank you! We'll get in touch soon.");
+  setShowForm(false);
+};
+
 
   return (
     <section id="home" className="relative pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-b from-white to-gray-50">
