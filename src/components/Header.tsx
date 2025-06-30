@@ -33,10 +33,10 @@ const Header = () => {
           <nav className="hidden md:flex items-center space-x-8">
             <a href="#home" className="font-medium text-gray-800 hover:text-growdhanda-gold transition-colors">Home</a>
             <a href="#services" className="font-medium text-gray-800 hover:text-growdhanda-gold transition-colors">Services</a>
-            <a href="#features" className="font-medium text-gray-800 hover:text-growdhanda-gold transition-colors">Features</a>
+            <a href="#features" className="font-medium text-gray-800 hover:text-growdhanda-gold transition-colors">BMS</a>
             <a href="#about" className="font-medium text-gray-800 hover:text-growdhanda-gold transition-colors">About</a>
             <a href="#contact" className="font-medium text-gray-800 hover:text-growdhanda-gold transition-colors">Contact</a>
-            <Button className="gd-button-primary">Get Started</Button>
+            
           </nav>
 
           {/* Mobile Menu Button */}
@@ -58,7 +58,7 @@ const Header = () => {
             <a href="#features" className="font-medium text-gray-800 hover:text-growdhanda-gold transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Features</a>
             <a href="#about" className="font-medium text-gray-800 hover:text-growdhanda-gold transition-colors" onClick={() => setIsMobileMenuOpen(false)}>About</a>
             <a href="#contact" className="font-medium text-gray-800 hover:text-growdhanda-gold transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Contact</a>
-            <Button className="gd-button-primary w-full">Get Started</Button>
+             
           </nav>
         </div>
       )}

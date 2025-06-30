@@ -1,8 +1,4 @@
-
 import { useEffect, useRef } from 'react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
 import { Mail } from 'lucide-react';
 
 const Contact = () => {
@@ -41,37 +37,9 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-100">
-            <h3 className="text-2xl font-bold mb-6">Send us a message</h3>
-            <form className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="space-y-2">
-                  <label htmlFor="name" className="text-sm font-medium text-gray-700">Name</label>
-                  <Input id="name" placeholder="Your name" className="border-gray-300" />
-                </div>
-                <div className="space-y-2">
-                  <label htmlFor="email" className="text-sm font-medium text-gray-700">Email</label>
-                  <Input id="email" type="email" placeholder="Your email" className="border-gray-300" />
-                </div>
-              </div>
-
-              <div className="space-y-2">
-                <label htmlFor="subject" className="text-sm font-medium text-gray-700">Subject</label>
-                <Input id="subject" placeholder="Subject" className="border-gray-300" />
-              </div>
-
-              <div className="space-y-2">
-                <label htmlFor="message" className="text-sm font-medium text-gray-700">Message</label>
-                <Textarea id="message" placeholder="Your message" className="border-gray-300 min-h-32" />
-              </div>
-
-              <Button className="gd-button-primary w-full md:w-auto">Send Message</Button>
-            </form>
-          </div>
-
-          <div className="flex flex-col justify-between">
-            <div className="mb-8">
+        <div className="flex justify-center">
+          <div className="flex flex-col gap-8 max-w-xl w-full">
+            <div>
               <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">

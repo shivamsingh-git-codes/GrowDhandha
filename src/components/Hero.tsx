@@ -96,7 +96,7 @@ const Hero = () => {
               <input type="text" name="name" placeholder="Your Name" className="w-full border p-2 rounded" onChange={handleChange} required />
               <input type="text" name="businessName" placeholder="Business Name" className="w-full border p-2 rounded" onChange={handleChange} required />
               <input type="text" name="industry" placeholder="Industry you operate in" className="w-full border p-2 rounded" onChange={handleChange} required />
-              <textarea name="problems" placeholder="Problems we can solve for you" className="w-full border p-2 rounded" onChange={handleChange} required />
+              <textarea name="problems" placeholder="Value we can add for you" className="w-full border p-2 rounded" onChange={handleChange} required />
               <input type="tel" name="contact" placeholder="Contact Number" className="w-full border p-2 rounded" onChange={handleChange} required />
               <input type="email" name="email" placeholder="Email Id" className="w-full border p-2 rounded" onChange={handleChange} required />
               <Button type="submit" className="w-full gd-button-primary">Submit</Button>

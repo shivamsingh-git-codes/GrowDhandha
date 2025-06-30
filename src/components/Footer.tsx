@@ -16,12 +16,7 @@ const Footer = () => {
               Simplifying business operations through innovative technology solutions.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-growdhanda-gold/80 transition-colors">
-                <Facebook size={20} className="text-white" />
-              </a>
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-growdhanda-gold/80 transition-colors">
-                <Twitter size={20} className="text-white" />
-              </a>
+              
               <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-growdhanda-gold/80 transition-colors">
                 <Instagram size={20} className="text-white" />
               </a>
@@ -31,27 +26,9 @@ const Footer = () => {
             </div>
           </div>
 
-          <div>
-            <h3 className="text-xl font-semibold mb-6">Quick Links</h3>
-            <ul className="space-y-3">
-              <li><a href="#home" className="text-gray-400 hover:text-growdhanda-gold transition-colors">Home</a></li>
-              <li><a href="#services" className="text-gray-400 hover:text-growdhanda-gold transition-colors">Services</a></li>
-              <li><a href="#features" className="text-gray-400 hover:text-growdhanda-gold transition-colors">Features</a></li>
-              <li><a href="#about" className="text-gray-400 hover:text-growdhanda-gold transition-colors">About Us</a></li>
-              <li><a href="#contact" className="text-gray-400 hover:text-growdhanda-gold transition-colors">Contact</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-xl font-semibold mb-6">Services</h3>
-            <ul className="space-y-3">
-              <li><a href="#" className="text-gray-400 hover:text-growdhanda-gold transition-colors">Accounting</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-growdhanda-gold transition-colors">HR Management</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-growdhanda-gold transition-colors">Payroll Processing</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-growdhanda-gold transition-colors">Business Intelligence</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-growdhanda-gold transition-colors">Software Demo</a></li>
-            </ul>
-          </div>
+         
+         
+        
 
           <div>
             <h3 className="text-xl font-semibold mb-6">Newsletter</h3>
@@ -75,11 +52,7 @@ const Footer = () => {
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
             &copy; {new Date().getFullYear()} growDhanda. All rights reserved.
           </p>
-          <div className="flex space-x-6">
-            <a href="#" className="text-gray-400 text-sm hover:text-growdhanda-gold transition-colors">Privacy Policy</a>
-            <a href="#" className="text-gray-400 text-sm hover:text-growdhanda-gold transition-colors">Terms of Service</a>
-            <a href="#" className="text-gray-400 text-sm hover:text-growdhanda-gold transition-colors">Cookie Policy</a>
-          </div>
+          
         </div>
       </div>
     </footer>
