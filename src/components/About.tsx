@@ -1,9 +1,9 @@
-
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Button } from '@/components/ui/button';
 
 const About = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
+  const [showMore, setShowMore] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -44,7 +44,7 @@ const About = () => {
 
           <div className="flex-1 order-1 lg:order-2">
             <div className="max-w-lg">
-              <h2 className="gd-heading">About grow Dhanda</h2>
+              <h2 className="gd-heading text-3xl font-bold mb-4">About grow Dhanda</h2>
               <p className="text-lg text-gray-700 mb-6">
                 At grow Dhanda, we believe that business owners should focus on growth and innovation, 
                 not paperwork and administrative tasks. Our mission is to simplify business operations 
@@ -59,7 +59,45 @@ const About = () => {
                 Our state-of-the-art business management software gives you complete control over your 
                 operations 24/7, whether you're in the office or halfway around the world.
               </p>
-              <Button className="gd-button-primary">Learn More About Us</Button>
+
+              <Button className="gd-button-primary" onClick={() => setShowMore(!showMore)}>
+                {showMore ? "Hide Details" : "Learn More About Us"}
+              </Button>
+
+              {showMore && (
+                <div className="mt-8 px-4 py-6 bg-gray-50 border border-gray-200 rounded-lg shadow-md space-y-5 text-gray-800">
+                  <h3 className="text-2xl font-semibold text-growdhanda-gold">Our Mission & Services</h3>
+                  <p>
+                    Our name reflects our purpose: driving the growth of MSMEs, startups, and legacy businesses that
+                    form over 50% of our economy. Whether you're a new venture or an established enterprise—growth is essential for survival. 
+                    As they say, <span className="italic text-gray-600">“life is a race, agar tej nahi bhagoge to koi kuchal ke aage nikal jaega.”</span>
+                  </p>
+                  <p>
+                    We’re your partners in growth from Day 0. From incorporating your company or LLP, registering partnership firms, setting up robust business software, obtaining ‘Eligible Startup’ status as per Startup India, 
+                    to handling accounting, taxation, HR, payroll, and government permissions—we take care of all admin functions so you can focus on scaling.
+                  </p>
+                  <div>
+                    <h4 className="font-medium text-lg text-gray-900 mb-2">Our core strengths include:</h4>
+                    <ul className="list-disc list-inside text-gray-700 space-y-1">
+                      <li>Securing bank finance and managing fundraising & debt syndication</li>
+                      <li>Creating investor-ready pitch decks, financial models & projections</li>
+                      <li>Registering intellectual property—trademarks, copyrights, patents</li>
+                    </ul>
+                  </div>
+                  <p>
+                    Backed by a team of qualified Chartered Accountants and tech-savvy professionals, we’re building AI-powered, machine-learned business software that provides real-time control over accounts, banking, inventory, GST, income tax, TDS, and payroll.
+                  </p>
+                  <p>
+                    This tool is a game-changer for sole owners and startup founders who need live insights into their business health.
+                  </p>
+                  <p className="font-semibold text-gray-900">
+                    If you’re looking to start, grow, or expand your business—<span className="text-growdhanda-gold">we’re in the same boat</span>. Let’s connect:
+                  </p>
+                  <p>
+                    📩 <a href="mailto:founder@growdhanda.com" className="text-blue-600 underline">founder@growdhanda.com</a>
+                  </p>
+                </div>
+              )}
             </div>
           </div>
         </div>

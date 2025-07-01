@@ -12,10 +12,18 @@ import { Button } from '@/components/ui/button';
 
 const services = [
   {
-    title: "Outsource Finance and HR Function",
+    title: "Outsource Finance and HR Function ",
     icon: ClipboardList,
     content: (
       <div className="space-y-4 text-gray-700 text-sm leading-relaxed">
+        <div className="bg-yellow-50 border border-yellow-200 text-yellow-900 p-4 rounded-md shadow-sm">
+        <p className="font-medium">
+          Get rid of managing Financials and Accountants.
+        </p>
+        <p>
+          We will coordinate with your Chartered Accountant and provide you with real-time updates. We will manage your Payrolls with AI and remove repetitive processes.
+        </p>
+      </div>
         <h4 className="font-semibold text-base">Managing Books of Accounts and Compliances</h4>
         <p>With Cloud Based Accounting Softwares coming in, there is opportunity to get your books maintained
 remotely and securely. We integrate our AI based API with your software so that you are always
@@ -135,18 +143,30 @@ const Services = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {services.map((service, index) => (
-            <Card key={index} className="gd-card cursor-pointer border-t-4 border-t-growdhanda-gold" onClick={() => setActiveModal(index)}>
-              <CardHeader>
-                <div className="w-12 h-12 bg-growdhanda-gold/10 rounded-full flex items-center justify-center mb-4">
-                  <service.icon size={24} className="text-growdhanda-gold" />
-                </div>
-                <CardTitle>{service.title}</CardTitle>
-                <CardDescription className="text-gray-600 mt-2">
-                  Click to know more.
-                </CardDescription>
-              </CardHeader>
-            </Card>
-          ))}
+  <Card key={index} className="gd-card cursor-pointer border-t-4 border-t-growdhanda-gold" onClick={() => setActiveModal(index)}>
+    <CardHeader>
+      <div className="w-12 h-12 bg-growdhanda-gold/10 rounded-full flex items-center justify-center mb-4">
+        <service.icon size={24} className="text-growdhanda-gold" />
+      </div>
+      <CardTitle>{service.title}</CardTitle>
+      <CardDescription className="text-gray-600 mt-2">
+        Click to know more.
+      </CardDescription>
+
+      {/* 👉 Add this conditionally for index 0 */}
+      {index === 0 && (
+        <div className="mt-4 text-sm text-gray-800 bg-yellow-50 border border-yellow-200 p-3 rounded-md shadow-sm">
+          <p className="font-medium mb-1">Get rid of managing Financials and Accountants.</p>
+          <p>
+            We will coordinate with your Chartered Accountant and provide you with real-time updates. We will manage your Payrolls with AI and remove repetitive processes.
+          </p>
+        </div>
+      )}
+       
+    </CardHeader>
+  </Card>
+))}
+
         </div>
 
         {activeModal !== null && (
