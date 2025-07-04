@@ -162,6 +162,30 @@ const Services = () => {
           </p>
         </div>
       )}
+      {index === 1 && (
+        <div className="mt-4 text-sm text-gray-800 bg-yellow-50 border border-yellow-200 p-3 rounded-md shadow-sm">
+          <p className="font-medium mb-1">India can’t ignore contributions of MSME in Economy and likewise we can’t ignore them.</p>
+          <p>
+            To Facilitate their growth and expansion we have dedicated MSME desk which have everything from Schemes, benefits to compliance management for MSME.
+          </p>
+        </div>
+      )}
+       {index === 2 && (
+        <div className="mt-4 text-sm text-gray-800 bg-yellow-50 border border-yellow-200 p-3 rounded-md shadow-sm">
+          <p className="font-medium mb-1">At grow Dhanda, we help founders turn great ideas into thriving businesses. </p>
+          <p>
+            We go beyond advice we execute. From incorporating your company to raising your first round, we act as your extended startup team, taking care of the foundations while you focus on building your product.
+          </p>
+        </div>
+      )}
+       {index === 3 && (
+        <div className="mt-4 text-sm text-gray-800 bg-yellow-50 border border-yellow-200 p-3 rounded-md shadow-sm">
+          <p className="font-medium mb-1">Are you a product owner stepping into the world of digital media?</p>
+          <p>
+            We’re here to make that journey seamless and successful. With a dedicated and passionate team by your side, we help you not just enter but dominate the digital landscape. From strategy to execution, we provide end-to-end support to turn your product into a powerful digital brand.
+          </p>
+        </div>
+      )}
        
     </CardHeader>
   </Card>
