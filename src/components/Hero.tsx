@@ -59,7 +59,7 @@ const Hero = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button className="gd-button-primary text-base" onClick={() => setShowForm(true)}>
-                Get Started
+                Learn More About Us
               </Button>
             </div>
           </div>

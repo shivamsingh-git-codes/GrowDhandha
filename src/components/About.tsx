@@ -61,7 +61,7 @@ const About = () => {
               </p>
 
               <Button className="gd-button-primary" onClick={() => setShowMore(!showMore)}>
-                {showMore ? "Hide Details" : "Learn More About Us"}
+                {showMore ? "Hide Details" : "Get Started"}
               </Button>
 
               {showMore && (

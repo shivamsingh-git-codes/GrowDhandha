@@ -16,7 +16,7 @@ const services = [
     icon: ClipboardList,
     content: (
       <div className="space-y-4 text-gray-700 text-sm leading-relaxed">
-        <div className="bg-yellow-50 border border-yellow-200 text-yellow-900 p-4 rounded-md shadow-sm">
+        <div className="bg-white-50 border border-white-200 text-black-900 p-4 rounded-md shadow-sm">
         <p className="font-medium">
           Get rid of managing Financials and Accountants.
         </p>
@@ -64,7 +64,7 @@ like interest subsidiary and concerned state Government schemes.</p>
 minimum hassle.</p>
 
         <h4 className="font-semibold text-base">Access to Credit & Finance</h4>
-        <p>Biggest painpoint of MSME is access to credit. We assist MSMEs in fund raising, Overdrafts/cash
+        <p>Biggest roadblocker of MSME is access to credit. We assist MSMEs in fund raising, Overdrafts/cash
 credits Debt Syndication along with receivable discounting at the competitive pricing. We assist in
 preparing proposals, CMA data, Projections and closing documentation with Banks. We deal with all
 types of Banks ranging from PSU to private banks and MNC banks to NBFCs .</p>
@@ -88,19 +88,34 @@ this globalised world.</p>
     content: (
       <div className="space-y-4 text-gray-700 text-sm leading-relaxed">
         <h4 className="font-semibold text-base">Company Incorporation & Compliance</h4>
-        <p>From registration to industry-specific approvals, we’ve got it covered.</p>
+        <p>This service covers the entire incorporation process, from selecting the right business
+structure (like a Private Limited Company, LLP, or Proprietorship) to drafting the necessary
+legal documents. We also ensure you obtain all the essential approvals and licenses specific
+to your industry. This includes going through complex regulatory frameworks so your
+business is compliant from day one, avoiding future legal hurdles.</p>
 
         <h4 className="font-semibold text-base">Startup India Registration</h4>
-        <p>We unlock IP protection, benefits, and recognition for your startup.</p>
+        <p>We help you navigate the process of registering under the Startup India initiative, which can
+unlock a host of benefits. These include potential tax exemptions, easier access to funding,
+simplified compliance. We also guide you through various government schemes and policies
+that could benefit your specific industry or business model.</p>
 
         <h4 className="font-semibold text-base">Business Infrastructure</h4>
-        <p>Set up accounting, payroll, compliance systems, and internal controls.</p>
+        <p>We assist in setting up robust and efficient systems for your core business functions. This
+includes designing and implementing frameworks for accounting and bookkeeping,
+managing payroll processes (including statutory compliances like provident fund and ESI),
+ensuring overall regulatory compliance, and establishing effective internal controls to
+safeguard your assets and ensure Sustainable Business growth.</p>
 
         <h4 className="font-semibold text-base">Hiring & Workforce Planning</h4>
         <p>Support hiring, policy creation, and documentation.</p>
 
         <h4 className="font-semibold text-base">Fundraising & CFO Services</h4>
-        <p>Investor-ready decks, term sheet negotiation, budgeting, and MIS reporting.</p>
+        <p>This service includes everything from helping you craft a compelling, investor-ready pitch
+deck and developing robust financial models that demonstrate your business's viability and
+growth potential. We guide you through the fundraising journey, assisting with negotiating
+term sheets with potential investors, and ultimately managing the capital raise process to
+ensure a smooth and successful funding round.</p>
       </div>
     )
   },
@@ -110,19 +125,40 @@ this globalised world.</p>
     content: (
       <div className="space-y-4 text-gray-700 text-sm leading-relaxed">
         <h4 className="font-semibold text-base">Digital Strategy & Branding</h4>
-        <p>Build a strong online presence with a consistent brand voice.</p>
+        <p>In today's competitive landscape, a strong online presence is non-negotiable. We'll work
+with you to craft a powerful digital strategy that goes beyond just looking good; it'll clearly
+communicate your product's unique value and voice. This involves defining your target
+audience, understanding market trends, and developing a cohesive brand identity</p>
 
         <h4 className="font-semibold text-base">Performance Marketing</h4>
-        <p>Set up efficient Meta/Google Ads campaigns to drive conversions.</p>
+        <p>Driving traffic, leads, and revenue efficiently is at the core of successful digital marketing.
+We assist in setting up and optimizing high-converting performance marketing campaigns
+across major platforms. Whether it's through Meta (Facebook/Instagram Ads), Google Ads,
+or other channels, our focus is on creating campaigns that deliver measurable results. We
+handle everything from audience targeting and ad creative development to bid
+management.</p>
 
         <h4 className="font-semibold text-base">Content & Social Media</h4>
-        <p>Run engaging content, manage your community, and build loyalty.</p>
+        <p>Our service includes consistent, platform-specific content creation that speaks directly to
+your audience's interests and pain points. We also provide community management,
+actively interacting with your followers, responding to comments, and fostering a loyal
+community around your brand. This holistic approach ensures your social media presence is
+dynamic, relevant, and consistently growing.</p>
 
         <h4 className="font-semibold text-base">Website & Funnel Development</h4>
-        <p>Develop landing pages and websites aligned with your sales journey.</p>
+        <p>We design and develop conversion-optimized websites and landing pages that aren't just
+aesthetically pleasing, but are built with your sales goals in mind. This involves mapping out
+the customer journey, creating intuitive navigation, and designing compelling calls to action.
+The goal is to build seamless funnels that guide visitors effortlessly towards making a
+purchase or taking a desired action.</p>
 
         <h4 className="font-semibold text-base">Analytics & Tracking</h4>
-        <p>Real-time dashboards and insights to measure and optimize performance.</p>
+        <p>We implement robust data tracking systems and dashboards that provide you with clear,
+real-time insights into your digital marketing performance. This means you'll understand
+exactly how your campaigns are performing, where your traffic is coming from, and how
+users are interacting with your website and content. With this actionable feedback, we can
+continuously refine strategies, optimize campaigns, and make data-driven decisions to
+ensure your marketing efforts are always yielding the best possible results.</p>
       </div>
     )
   }
@@ -155,7 +191,7 @@ const Services = () => {
 
       {/* 👉 Add this conditionally for index 0 */}
       {index === 0 && (
-        <div className="mt-4 text-sm text-gray-800 bg-yellow-50 border border-yellow-200 p-3 rounded-md shadow-sm">
+        <div className="mt-4 text-sm text-gray-800 bg-white-50 border border-white-200 p-3 rounded-md shadow-sm">
           <p className="font-medium mb-1">Get rid of managing Financials and Accountants.</p>
           <p>
             We will coordinate with your Chartered Accountant and provide you with real-time updates. We will manage your Payrolls with AI and remove repetitive processes.
@@ -163,7 +199,7 @@ const Services = () => {
         </div>
       )}
       {index === 1 && (
-        <div className="mt-4 text-sm text-gray-800 bg-yellow-50 border border-yellow-200 p-3 rounded-md shadow-sm">
+        <div className="mt-4 text-sm text-gray-800 bg-white-50 border border-white-200 p-3 rounded-md shadow-sm">
           <p className="font-medium mb-1">India can’t ignore contributions of MSME in Economy and likewise we can’t ignore them.</p>
           <p>
             To Facilitate their growth and expansion we have dedicated MSME desk which have everything from Schemes, benefits to compliance management for MSME.
@@ -171,7 +207,7 @@ const Services = () => {
         </div>
       )}
        {index === 2 && (
-        <div className="mt-4 text-sm text-gray-800 bg-yellow-50 border border-yellow-200 p-3 rounded-md shadow-sm">
+        <div className="mt-4 text-sm text-gray-800 bg-white-50 border border-white-200 p-3 rounded-md shadow-sm">
           <p className="font-medium mb-1">At grow Dhanda, we help founders turn great ideas into thriving businesses. </p>
           <p>
             We go beyond advice we execute. From incorporating your company to raising your first round, we act as your extended startup team, taking care of the foundations while you focus on building your product.
@@ -179,7 +215,7 @@ const Services = () => {
         </div>
       )}
        {index === 3 && (
-        <div className="mt-4 text-sm text-gray-800 bg-yellow-50 border border-yellow-200 p-3 rounded-md shadow-sm">
+        <div className="mt-4 text-sm text-gray-800 bg-white-50 border border-white-200 p-3 rounded-md shadow-sm">
           <p className="font-medium mb-1">Are you a product owner stepping into the world of digital media?</p>
           <p>
             We’re here to make that journey seamless and successful. With a dedicated and passionate team by your side, we help you not just enter but dominate the digital landscape. From strategy to execution, we provide end-to-end support to turn your product into a powerful digital brand.
